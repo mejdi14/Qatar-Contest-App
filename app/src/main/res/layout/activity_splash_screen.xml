@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/scene"
+    android:background="#FFFFFF"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/woman"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/women"
+        app:layout_constraintEnd_toEndOf="@id/white_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_circle" />
+
+
+
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@id/foundation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/woman"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="black_loading.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/foundation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:text="Qatar new contest"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation_view" />
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/round_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/white_circle"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/white_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/circle"
+
+        app:layout_constraintTop_toTopOf="@id/circle"
+        app:layout_constraintBottom_toBottomOf="@id/circle"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:text="New"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/circle"
+        app:layout_constraintEnd_toStartOf="@id/circle"
+        app:layout_constraintTop_toTopOf="@id/circle" />
+
+    <TextView
+        android:id="@+id/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="Light"
+        android:textColor="@color/white"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/circle"
+        app:layout_constraintStart_toStartOf="@id/circle"
+        app:layout_constraintTop_toTopOf="@id/circle" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
