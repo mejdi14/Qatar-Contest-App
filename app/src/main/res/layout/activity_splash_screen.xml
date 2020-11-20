@@ -73,16 +73,18 @@
 
         app:layout_constraintTop_toTopOf="@id/circle"
         app:layout_constraintBottom_toBottomOf="@id/circle"/>
+
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginRight="5dp"
         android:gravity="center_vertical"
-        android:text="New"
+        android:text="ومضةأمل"
         android:textColor="@color/black"
         android:textSize="45dp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/circle"
         app:layout_constraintBottom_toBottomOf="@id/circle"
         app:layout_constraintEnd_toStartOf="@id/circle"
         app:layout_constraintTop_toTopOf="@id/circle" />
@@ -93,12 +95,31 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
         android:gravity="center"
-        android:text="Light"
+        android:text=""
         android:textColor="@color/white"
         android:textSize="45dp"
         android:textStyle="bold"
+        android:translationX="-10dp"
         app:layout_constraintBottom_toBottomOf="@id/circle"
         app:layout_constraintStart_toStartOf="@id/circle"
         app:layout_constraintTop_toTopOf="@id/circle" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/intro"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arabic_font"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:alpha="0"
+        app:layout_constraintTop_toBottomOf="@id/white_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.motion.widget.MotionLayout>

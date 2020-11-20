@@ -24,7 +24,8 @@
             app:layout_constraintStart_toEndOf="@id/white_circle"
 
             app:layout_constraintTop_toTopOf="@id/white_circle"
-            app:layout_constraintBottom_toBottomOf="@id/white_circle"/>
+            app:layout_constraintBottom_toBottomOf="@id/white_circle"
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <Constraint
             android:id="@+id/white_circle"
@@ -43,7 +44,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
+            android:layout_marginRight="4dp"
             android:gravity="center_vertical"
             android:text="New"
             android:textColor="@color/black"
@@ -51,13 +52,16 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/white_circle"
             app:layout_constraintEnd_toEndOf="@id/white_circle"
-            app:layout_constraintTop_toTopOf="@id/white_circle" />
+            app:layout_constraintTop_toTopOf="@id/white_circle"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintVertical_bias="0.588"
+            app:layout_constraintStart_toStartOf="@+id/circle" />
 
         <Constraint
             android:id="@+id/sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="8dp"
             android:gravity="center"
             android:text="Light"
             android:textColor="@color/white"
@@ -65,7 +69,9 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/white_circle"
             app:layout_constraintStart_toStartOf="@id/circle"
-            app:layout_constraintTop_toTopOf="@id/white_circle" />
+            app:layout_constraintTop_toTopOf="@id/white_circle"
+            app:layout_constraintVertical_bias="0.511"
+            android:layout_marginStart="8dp" />
 
 
     </ConstraintSet>
@@ -103,6 +109,7 @@ app:layout_constraintBottom_toBottomOf="parent"
             android:textSize="45dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/white_circle"
+            app:layout_constraintStart_toEndOf="@id/white_circle"
             app:layout_constraintEnd_toEndOf="@id/white_circle"
             app:layout_constraintTop_toTopOf="@id/white_circle" />
         <Constraint
