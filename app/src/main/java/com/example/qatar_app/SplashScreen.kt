@@ -1,12 +1,15 @@
 package com.example.qatar_app
 
 import android.opengl.Visibility
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.View
+import androidx.annotation.RequiresApi
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.core.animation.doOnEnd
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class SplashScreen : AppCompatActivity() {
@@ -30,9 +33,14 @@ class SplashScreen : AppCompatActivity() {
                 Log.d("nice", "onTransitionStarted: ")
             }
 
+            @RequiresApi(Build.VERSION_CODES.KITKAT)
             override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
                 Log.d("visibility switch", "onTransitionCompleted: ")
-                intro.animate().alpha(1f).setDuration(500)
+                intro.animate().alpha(1f).setDuration(500).setUpdateListener {
+                    it.doOnEnd {
+                        floating.animate().alpha(1f).setDuration(500)
+                    }
+                }
             }
 
             override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) {
