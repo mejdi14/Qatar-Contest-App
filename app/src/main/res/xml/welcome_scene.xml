@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/tools">
+    <Transition
+        android:id="@+id/first"
+        app:constraintSetEnd="@id/collapsed"
+        app:constraintSetStart="@id/expanded"
+        app:duration="500">
+
+        <OnClick
+            app:clickAction="transitionToEnd"
+            />
+
+        <KeyFrameSet></KeyFrameSet>
+    </Transition>
+    <ConstraintSet android:id="@+id/expanded">
+        <Constraint
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <Constraint
+            android:id="@+id/pho"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="parent"
+            />
+
+
+
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/collapsed">
+        <Constraint
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            />
+
+        <Constraint
+            android:id="@+id/profileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/explode" >
+
+
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/second"
+        app:constraintSetStart="@+id/collapsed"
+        app:constraintSetEnd="@+id/explode"
+        app:duration="2000">
+        <OnClick
+            app:clickAction="transitionToEnd"
+            />
+    </Transition>
+</MotionScene>

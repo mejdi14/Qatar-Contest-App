@@ -1,5 +1,6 @@
 package com.example.qatar_app
 
+import android.content.Intent
 import android.opengl.Visibility
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.core.animation.doOnEnd
+import androidx.core.app.ActivityOptionsCompat
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class SplashScreen : AppCompatActivity() {
@@ -17,8 +19,16 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
         Handler().postDelayed({
-            startAnimation()
+            startNewActivity()
         }, 4000)
+    }
+
+    private fun startNewActivity() {
+        val intent = Intent(this, WelcomeActivity::class.java)
+       /* val options = ActivityOptionsCompat.
+        makeSceneTransitionAnimation(this, circle, "transition_image")*/
+        startActivity(intent)
+        finish()
     }
 
     private fun startAnimation() {

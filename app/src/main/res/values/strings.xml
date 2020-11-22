@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Qatar-App</string>
     <string name="intro"> إذا كنت من ذوي الإحتياجات الخصوصية او من كبار السن أو ربما تريد ان تصبح متطوعا وتساهم في النهوض بمجتمعك من خلال تقديم يد المساعدة لغيرك فأنت في المكان المناسب</string>
+    <string name="insert_name">مرحبا بك معنا في تطبيق ومضة أمل الرجاء إدخال اسمك أدناه</string>
+    <string name="fake_name">بإمكانك إدخال إسم مزيف إذا شعرت بعدم الإرتياح بتقديمك لمعلومات شخصية</string>
+    <string name="chose_image_intro">الرجاء إختيار صورة شخصية تمثلك أدناه</string>
 </resources>
