@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1090862030992",
+    "firebase_url": "https://qatar-412e7.firebaseio.com",
+    "project_id": "qatar-412e7",
+    "storage_bucket": "qatar-412e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090862030992:android:96ca9ab5807978501d3815",
+        "android_client_info": {
+          "package_name": "com.example.qatar_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090862030992-dfrf5olkaujclkaum1avlp1ctfkrgn08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.qatar_app",
+            "certificate_hash": "d7b0d3aef2ae4f2403a2dc96d2ba65fd6e6c92c1"
+          }
+        },
+        {
+          "client_id": "1090862030992-und7qlurkg6srlmn0f27cf1pnrkrggf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBD0UeNM_h4TrdDgfyI-GyNFHnHpBsl-sU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090862030992-und7qlurkg6srlmn0f27cf1pnrkrggf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,4 +9,7 @@
     <item name="lovley_green" type="color">#9bc53d</item>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#ededed</color>
+    <color name="orange">#FEF4DF</color>
+    <color name="night">#10205A</color>
+    <color name="yellow">#FFF4F3</color>
 </resources>

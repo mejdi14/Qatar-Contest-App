@@ -31,32 +31,4 @@ class SplashScreen : AppCompatActivity() {
         finish()
     }
 
-    private fun startAnimation() {
-        motion.transitionToState(R.id.collapsed)
-        motion.setTransitionListener(object : MotionLayout.TransitionListener {
-            override fun onTransitionStarted(p0: MotionLayout?, p1: Int, p2: Int) {
-                Log.d("nice", "onTransitionStarted: ")
-
-            }
-
-            override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, p3: Float) {
-                Log.d("nice", "onTransitionStarted: ")
-            }
-
-            @RequiresApi(Build.VERSION_CODES.KITKAT)
-            override fun onTransitionCompleted(p0: MotionLayout?, p1: Int) {
-                Log.d("visibility switch", "onTransitionCompleted: ")
-                intro.animate().alpha(1f).setDuration(500).setUpdateListener {
-                    it.doOnEnd {
-                        floating.animate().alpha(1f).setDuration(500)
-                    }
-                }
-            }
-
-            override fun onTransitionTrigger(p0: MotionLayout?, p1: Int, p2: Boolean, p3: Float) {
-                Log.d("nice", "onTransitionStarted: ")
-            }
-
-        })
-    }
 }

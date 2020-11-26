@@ -11,13 +11,24 @@
 
     <ImageView
         android:id="@+id/woman"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="420dp"
         android:layout_marginTop="15dp"
-        android:src="@drawable/girl"
-        android:translationX="-70dp"
-        app:layout_constraintEnd_toEndOf="@id/white_circle"
+        android:src="@drawable/ic_black_draw_boy"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/girl"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/white_circle" />
+    <ImageView
+        android:id="@+id/girl"
+        android:layout_width="0dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="15dp"
+
+        android:src="@drawable/ic_black_draw_cool_boy"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/woman"
         app:layout_constraintTop_toBottomOf="@id/white_circle" />
 
 
@@ -85,7 +96,7 @@
         android:text="ومضةأمل"
         android:fontFamily="@font/janna_bold"
         android:textColor="@color/black"
-        android:textSize="45dp"
+        android:textSize="55dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/circle"
         app:layout_constraintBottom_toBottomOf="@id/circle"
@@ -107,22 +118,7 @@
         app:layout_constraintStart_toStartOf="@id/circle"
         app:layout_constraintTop_toTopOf="@id/circle" />
 
-    <TextView
-        android:id="@+id/intro"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/intro"
-        android:textColor="@color/black"
-        android:fontFamily="@font/janna_bold"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:alpha="0"
-        app:layout_constraintTop_toBottomOf="@id/white_circle"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floating"
@@ -143,7 +139,7 @@
         android:outlineAmbientShadowColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/intro"/>
+        />
 
 
 

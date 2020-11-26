@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_patients"
+        android:checked="true"
+        android:icon="@drawable/ic_home"
+        android:title=""
+        
+        app:showAsAction="ifRoom"
+         />
+    <item
+        android:id="@+id/action_create"
+        android:checked="false"
+        android:icon="@drawable/ic_send"
+        android:title=""
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_calendar"
+        android:checked="false"
+        android:icon="@drawable/ic_pin"
+        android:title=""
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_sync"
+        android:checked="false"
+        android:icon="@drawable/ic_user"
+        android:title=""
+        app:showAsAction="ifRoom"
+         />
+
+
+</menu>

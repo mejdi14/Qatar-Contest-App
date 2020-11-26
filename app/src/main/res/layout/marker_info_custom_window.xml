@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#07256e"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/marker_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:paddingLeft="12.75dp"
+        android:paddingTop="6.25dp"
+        android:paddingRight="12.75dp"
+        android:paddingBottom="6.25dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:paddingBottom="2.5dp">
+
+            <TextView
+                android:id="@+id/marker_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello"
+                android:textColor="?attr/colorAccent"
+                android:textSize="15.5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/marker_info_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/colorAccent"
+                android:textSize="12.5dp" />
+
+            <!--
+                        <TextView
+                            android:id="@+id/marker_info_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/colorAccent"
+                            android:textSize="@dimen/marker_info_detail_text_size" />
+
+                        <TextView
+                            android:id="@+id/marker_info_zip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="?attr/colorAccent"
+                            android:textSize="@dimen/marker_info_detail_text_size" />
+            -->
+
+            <!--<RatingBar
+                android:id="@+id/marker_info_rate"
+                style="@style/RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:visibility="visible" />-->
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
